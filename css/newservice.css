@@ -1,40 +1,41 @@
-/* *{
-    box-sizing: border-box;
-} */
+body{
+    background-color: #f1f1f1;
+}
 
-  
-.services-inside{
+.newservice {
+    /* max-width: 1100px; */
+    /* height:auto; */
+    margin: 0;
+    padding: 0;
+}
+
+.newservice .newbackbutton{
+    /* background-color: #3498db; */
+    border-radius: 28px;
+    position: Fixed;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-top: 20px;
+    transition: all .3s ease;
+}
+
+.newservice .newbackbutton a{
+    font-size: 55px;
+    color: #000000;
+}
+
+.newservice .newbackbutton:hover i {
+    background-color: #3498db;
+    border-radius: 28px;
+}
+
+.newservicesection {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+    margin: auto;
+    /* padding: 40px; */
+}
 
-  .services-inside .backbutton{
-      /* width: 120px;
-      height: 100px; */
-      background-color: #3498db;
-      border-radius: 25px;
-      position: Fixed;
-      cursor: pointer;
-      padding-left: 20px;
-      margin-top: 20px;
-  }
-
-  .services-inside .backbutton i{
-      font-size: 50px;
-      position: fixed;
-      align-content: center;
-      border-radius: 28px;
-     color: black;        
-
-  }
-
-  .services-inside .backbutton i:hover {
-      /* color: #3498db; */
-      background-color: #3498db;
-  }
-
-  .services-inside h1{
+.newservicesection h1{
     display: inline-block;
     text-transform: uppercase;
     color: #000000;
@@ -42,19 +43,18 @@
     font-size: 40px;
     padding-bottom: 10px;
     margin-top: 40px;
-  }
+}
 
-  .services-inside p {
-      /* width: 80%; */
-      margin-top: 20px;
+.newservicesection p{
+    margin-top: 20px;
       padding-left: 150px;
       padding-right: 150px;
       color: #000000;
       text-align: justify;
       font-size: 20px;
-  }
+}
 
-  .services-inside h3{
+.newservicesection h3{
     display: inline-block;
     color: #3498db;
     /* border-bottom: 4px solid #3498db; */
@@ -63,22 +63,23 @@
     margin-top: 10px;
   }
 
-  .services-inside ul {
-      margin-top: 0px;
-      display: inline-block;
-    text-align: justify;
-  }
-
-  .services-inside ul li{
-      color: #3498db;
-      font-size: 20px;   
-  }
-  .services-inside ul li a{
-    color: #000000;
-    cursor: pointer;
-    font-size: 20px;
+  .newservicesection ul {
+    margin-top: 0px;
+    display: inline-block;
+  text-align: justify;
+  margin-bottom: 20px;
 }
-  
+
+.newservicesection ul li{
+    color: #3498db;
+    font-size: 20px;   
+}
+.newservicesection ul li a{
+  color: #000000;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 
 .slider1{
     width: 800px;
@@ -226,7 +227,7 @@
     animation: slide5 10s infinite;
 }
 @keyframes slide5{
-    25%{
+    25%{    
         background: url('../images/18.png');
         background-repeat: no-repeat;
         background-size: 800px 400px;
@@ -247,11 +248,33 @@
         background-size: 800px 400px;
     }
 }
-/* For Mobile Screen */
 
-@media screen and (max-width: 768px) {
 
-    .services-inside h1{
+/* For mobile screen */
+
+@media(max-width:767px){
+    .newservice .newbackbutton{
+        /* background-color: #3498db; */
+        border-radius: 25px;
+        position: Fixed;
+        cursor: pointer;
+        padding-left: 20px;
+        margin-top: 20px;
+        transition: all .3s ease;
+    }
+    
+    .newservice .newbackbutton a{
+        font-size: 40px;
+        color: #000000;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .newservice .newbackbutton:hover i {
+        background-color: #3498db;
+        border-radius: 30px;
+    }   
+    .newservicesection h1{
         display: inline-block;
         text-transform: uppercase;
         color: #000000;
@@ -259,19 +282,18 @@
         font-size: 30px;
         padding-bottom: 10px;
         margin-top: 40px;
-      }
-
-    .services-inside p {
-        /* width: 80%; */
-        margin-top: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
-        color: #000000;
-        text-align: justify;
-        font-size: 15px;
     }
-
-    .services-inside h3{
+    
+    .newservicesection p{
+        margin-top: 20px;
+          padding-left: 50px;
+          padding-right: 50px;
+          color: #000000;
+          text-align: justify;
+          font-size: 15px;
+    }
+    
+    .newservicesection h3{
         display: inline-block;
         color: #3498db;
         /* border-bottom: 4px solid #3498db; */
@@ -280,30 +302,32 @@
         margin-top: 10px;
       }
     
-      .services-inside ul {
-          margin-top: 0px;
-          display: inline-block;
-        text-align: justify;
-      }
-    
-      .services-inside ul li{
-          color: #3498db;
-          font-size: 18px;   
-      }
-      .services-inside ul li a{
-        color: #000000;
-        cursor: pointer;
-        font-size: 18px;
+      .newservicesection ul {
+        margin-top: 0px;
+        display: inline-block;
+      text-align: justify;
     }
-   
+    
+    .newservicesection ul li{
+        color: #3498db;
+        font-size: 18px;   
+    }
+    .newservicesection ul li a{
+      color: #000000;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
     .slider1{
         width: 400px;
         height: 200px;
+        
+        /* background-color: red; */
         background-image: url('../images/1.png');
         background-repeat: no-repeat;
         background-size: 400px 200px;
         margin: auto;
-        margin-top: 15px;
+        margin-top: 30px;
         animation: slide1 10s infinite;
     }
     @keyframes slide1{
@@ -328,7 +352,7 @@
             background-size: 400px 200px;
         }
     }
-    
+
     .slider2{
         width: 400px;
         height: 200px;
@@ -460,5 +484,111 @@
             background-size: 400px 200px;
         }
     }
+    
 }
 
+
+/*  */
+@media(max-width:500px) {
+    .newservice .newbackbutton{
+        /* background-color: #3498db; */
+        border-radius: 25px;
+        position: Fixed;
+        cursor: pointer;
+        padding-left: 10px;
+        margin-top: 10px;
+        transition: all .3s ease;
+    }
+    
+    .newservice .newbackbutton a{
+        font-size: 30px;
+        color: #000000;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .newservice .newbackbutton:hover i {
+        background-color: #3498db;
+        border-radius: 28px;
+    }   
+
+    .newservicesection h1{
+        display: inline-block;
+        text-transform: uppercase;
+        color: #000000;
+        border-bottom: 4px solid #3498db;
+        font-size: 25px;
+        padding-bottom: 10px;
+        margin-top: 40px;
+    }
+    
+    .newservicesection p{
+        margin-top: 20px;
+          padding-left: 30px;
+          padding-right: 30px;
+          color: #000000;
+          text-align: justify;
+          font-size: 15px;
+    }
+    
+    .newservicesection h3{
+        display: inline-block;
+        color: #3498db;
+        /* border-bottom: 4px solid #3498db; */
+        font-size: 20px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+      }
+    
+      .newservicesection ul {
+        margin-top: 0px;
+        display: inline-block;
+      text-align: justify;
+    }
+    
+    .newservicesection ul li{
+        color: #3498db;
+        font-size: 15px;   
+    }
+    .newservicesection ul li a{
+      color: #000000;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .slider1{
+        width: 300px;
+        height: 150px;
+        
+        /* background-color: red; */
+        background-image: url('../images/1.png');
+        background-repeat: no-repeat;
+        background-size: 300px 150px;
+        margin: auto;
+        margin-top: 30px;
+        animation: slide1 10s infinite;
+    }
+    @keyframes slide1{
+        25%{
+            background: url('../images/4.png');
+            background-repeat: no-repeat;
+            background-size: 300px 150px;
+        }
+        50%{
+            background: url('../images/2.png');
+            background-repeat: no-repeat;
+            background-size: 300px 150px;
+        }
+        75%{
+            background: url('../images/3.png');
+            background-repeat: no-repeat;
+            background-size: 300px 150px;
+        }
+        100%{
+            background: url('../images/1.png');
+            background-repeat: no-repeat;
+            background-size: 300px 150px;
+        }
+    }
+    
+}
