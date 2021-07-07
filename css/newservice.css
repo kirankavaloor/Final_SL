@@ -517,7 +517,7 @@ body{
         text-transform: uppercase;
         color: #000000;
         border-bottom: 4px solid #3498db;
-        font-size: 25px;
+        font-size: 20px;
         padding-bottom: 10px;
         margin-top: 40px;
     }
@@ -535,7 +535,7 @@ body{
         display: inline-block;
         color: #3498db;
         /* border-bottom: 4px solid #3498db; */
-        font-size: 20px;
+        font-size: 18px;
         padding-bottom: 10px;
         margin-top: 10px;
       }
@@ -557,13 +557,13 @@ body{
     }
 
     .slider1{
-        width: 300px;
+        width: 320px;
         height: 150px;
         
         /* background-color: red; */
         background-image: url('../images/1.png');
         background-repeat: no-repeat;
-        background-size: 300px 150px;
+        background-size: 320px 150px;
         margin: auto;
         margin-top: 30px;
         animation: slide1 10s infinite;
@@ -572,22 +572,154 @@ body{
         25%{
             background: url('../images/4.png');
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: 320px 150px;
         }
         50%{
             background: url('../images/2.png');
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: 320px 150px;
         }
         75%{
             background: url('../images/3.png');
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: 320px 150px;
         }
         100%{
             background: url('../images/1.png');
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: 320px 150px;
+        }
+    }
+
+    .slider2{
+        width: 320px;
+        height: 150px;
+        background: url('../images/5.png');
+        background-repeat: no-repeat;
+        background-size: 320px 150px;
+        margin: auto;
+        margin-top: 15px;
+        animation: slide2 20s infinite;
+    }
+    @keyframes slide2{
+        25%{
+            background: url('../images/6.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        50%{
+            background: url('../images/7.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        75%{
+            background: url('../images/8.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        100%{
+            background: url('../images/5.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+    }
+    
+    .slider3{
+        width: 320px;
+        height: 150px;
+        background: url('../images/9.png');
+        background-repeat: no-repeat;
+        background-size: 320px 150px;
+        margin: auto;
+        margin-top: 15px;
+        animation: slide3 10s infinite;
+    }
+    @keyframes slide3{
+        25%{
+            background: url('../images/10.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        50%{
+            background: url('../images/11.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        75%{
+            background: url('../images/12.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        100%{
+            background: url('../images/9.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+    }
+    
+    .slider4{
+        width: 320px;
+        height: 150px;
+        background: url('../images/13.png');
+        background-repeat: no-repeat;
+        background-size: 320px 150px;
+        margin: auto;
+        margin-top: 15px;
+        animation: slide4 10s infinite;
+    }
+    @keyframes slide4{
+        25%{
+            background: url('../images/14.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        50%{
+            background: url('../images/15.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        75%{
+            background: url('../images/16.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        100%{
+            background: url('../images/13.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+    }
+
+    .slider5{
+        width: 320px;
+        height: 150px;
+        background: url('../images/18.png');
+        background-repeat: no-repeat;
+        background-size: 320px 150px;
+        margin: auto;
+        margin-top: 15px;
+        animation: slide5 10s infinite;
+    }
+    @keyframes slide5{
+        25%{
+            background: url('../images/19.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        50%{
+            background: url('../images/20.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        75%{
+            background: url('../images/21.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
+        }
+        100%{
+            background: url('../images/18.png');
+            background-repeat: no-repeat;
+            background-size: 320px 150px;
         }
     }
     
