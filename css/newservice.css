@@ -229,22 +229,22 @@ body{
 }
 @keyframes slide5{
     25%{    
-        background: url('../images/18.png');
-        background-repeat: no-repeat;
-        background-size: 800px 400px;
-    }
-    50%{
         background: url('../images/19.png');
         background-repeat: no-repeat;
         background-size: 800px 400px;
     }
-    75%{
+    50%{
         background: url('../images/20.png');
         background-repeat: no-repeat;
         background-size: 800px 400px;
     }
-    100%{
+    75%{
         background: url('../images/21.png');
+        background-repeat: no-repeat;
+        background-size: 800px 400px;
+    }
+    100%{
+        background: url('../images/18.png');
         background-repeat: no-repeat;
         background-size: 800px 400px;
     }
