@@ -73,6 +73,7 @@ body{
 .newservicesection ul li{
     color: #3498db;
     font-size: 20px;   
+    text-align: justify;
 }
 .newservicesection ul li a{
   color: #000000;
